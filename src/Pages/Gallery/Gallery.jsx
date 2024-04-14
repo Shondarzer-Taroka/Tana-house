@@ -16,8 +16,10 @@ const photos = [
 ];
 const Gallery = () => {
     return (
+          <>
+          <h1 className="text-3xl font-bold text-center my-7">Our Gallery</h1>
         <PhotoAlbum layout="rows" photos={photos} />
-    );
+     </>);
 };
 
 export default Gallery;

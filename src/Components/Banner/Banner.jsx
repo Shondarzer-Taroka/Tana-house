@@ -77,7 +77,7 @@ const Banner = () => {
 </aside>
 
 <aside>
-    <img className='w-full shadow-2xl shadow-black bg-none' src={bannerImg} alt="" />
+    <img className='w-[300px] h-[360px] border-[5px] border-black rounded-tl-[29px] rounded-tr-[5px] rounded-bl-[5px] rounded-br-[29px] shadow-2xl shadow-black bg-none' src={'https://i.ibb.co/WvRMYmM/bl13.jpg'} alt="" />
 </aside>
 
 </section>
