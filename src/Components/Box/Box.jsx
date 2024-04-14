@@ -3,13 +3,16 @@ import { Link, useLocation } from 'react-router-dom';
 import { IoLocationSharp } from "react-icons/io5";
 const Box = ({box}) => {
     let {id,image,estate_title,segment_name,price,area,location,facilities,status}=box
-    let loc=useLocation() 
-    console.log(loc);
-    console.log(facilities);
+    // let loc=useLocation() 
+    // console.log(loc);
+    // console.log(facilities);
     return (
         <div id='container-box' className='border-2 rounded-xl'> 
             <div id='img' className='relative'>
-                 <img className='w-full h-full rounded-xl' src={'https://i.ibb.co/jzFwmRx/istockphoto-501619270-612x612.jpg'} alt="" />  
+                <div className='h-[240px]'> 
+                <img className='w-full h-full rounded-xl' src={image} alt="" />      
+                </div>
+                 
                  <span className= ' rounded text-center absolute top-[0] right-[0] bg-[#7ab543ab] text-white px-4 py-1 rounded-tl-lg rounded-bl-3xl'>
                     for {status}
                 </span> 

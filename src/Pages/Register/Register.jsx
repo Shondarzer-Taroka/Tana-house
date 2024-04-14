@@ -62,11 +62,15 @@ const Register = () => {
       })
       // setSpinner(true)
       let emailUser=result.user 
-      navigate(loc?.state ? loc.state : '/')
-     
-      location.reload()
-      console.log(emailUser);
       toast.success('Successfully registered')
+      setTimeout(()=>{
+        navigate(loc?.state ? loc.state : '/')
+        location.reload()
+      },1000)
+      // navigate(loc?.state ? loc.state : '/')
+      // toast.success('Successfully registered')
+      // location.reload()
+      console.log(emailUser);
       setSuccess('Successfully registered')
      })
      .catch(er=>{

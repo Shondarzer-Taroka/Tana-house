@@ -21,9 +21,9 @@ const EstateDetails = () => {
                 <title>Estate Details</title>
                </Helmet>
             <ScrollRestoration></ScrollRestoration>
-            <aside className='h-[500px] w-full lg:w-[1152px]'  style={{backgroundImage:`url(${'https://i.ibb.co/jzFwmRx/istockphoto-501619270-612x612.jpg'})`, backgroundRepeat:'no-repeat',backgroundSize:'cover',}}>
+            <aside className='h-[500px] w-full lg:w-[1152px]'  style={{backgroundImage:`url(${image})`, backgroundRepeat:'no-repeat',backgroundSize:'cover',}}>
          {/* <div className="hero-overlay bg-opacity-60"></div> */}
-             <div className="h-full w-full text-4xl font-bold font-poppins flex items-center justify-center bg-[#7c787883] font-poppins mb-9 animate__animated animate__fadeInDown" > <p className="text-white">{estate_title}</p> </div>
+             <div className="h-full w-full text-4xl font-bold  flex items-center justify-center bg-[#7c787883] font-poppins mb-9 animate__animated animate__fadeInDown" > <p className="text-white">{estate_title}</p> </div>
          </aside>
             <aside>
 

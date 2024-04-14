@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { FaCircleUser } from "react-icons/fa6";
 const NavBar = () => {
-    let { user, signingOut,loading } = useContext(AuthContext)
+    let { user, signingOut, loading } = useContext(AuthContext)
     function signingOutFromFirebase() {
         signingOut()
             .then()
@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className="navbar bg-base-100 font-poppins">
             <div className="navbar-start">
                 <div className="dropdown">
-                {/* btn btn-ghost */}
+                    {/* btn btn-ghost */}
                     <div tabIndex={0} role="button" className=" mr-1 lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
@@ -27,7 +27,7 @@ const NavBar = () => {
                         {navlinks}
                     </ul>
                 </div>
-                <a className=" text-xl font-bold font-poppins">daisyUI</a>
+                <a className=" text-xl font-bold font-poppins">TaNa House</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -36,11 +36,10 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
                 {
-                 loading ? <h1>loading</h1> : <div className="flex gap-1">
-                 {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img  className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">sign out</button>  </div> : <button onClick={''} className="btn"><Link to={'/log'}>Log In</Link></button>}
+                    loading ? <h1>loading</h1> : <div className="flex gap-1">
+                        {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">sign out</button>  </div> : <button onClick={''} className="btn"><Link to={'/log'}>Log In</Link></button>}
 
-                 
-             </div>
+                    </div>
                 }
 
 
@@ -53,5 +52,5 @@ const NavBar = () => {
         </div>
     );
 };
-   {/* { user && <div> <img className="w-[60px] h-[60px] border-red-300" src={user.photoURL} alt="" /> </div> } */}
+{/* { user && <div> <img className="w-[60px] h-[60px] border-red-300" src={user.photoURL} alt="" /> </div> } */ }
 export default NavBar;

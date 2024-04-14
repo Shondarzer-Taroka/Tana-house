@@ -18,7 +18,7 @@ const LogIn = () => {
   let [success,setSuccess]=useState('')
   let navigate= useNavigate()
    let loc=useLocation() 
-   console.log(loc);
+  //  console.log(loc);
 
   function handleToggle() {
     setToggle(!toggle)
@@ -29,8 +29,13 @@ const LogIn = () => {
         signInBygoogle()
         .then((result)=>{
             let googleUser=result.user 
-            navigate(loc?.state ? loc.state : '/')
+            // alert('oky')
             toast.success('successfully log in')
+            setTimeout(()=>{
+              navigate(loc?.state ? loc.state : '/')
+            },1000)
+            // navigate(loc?.state ? loc.state : '/')
+          
             console.log(googleUser);
         })
         .catch(er=>{
@@ -44,6 +49,7 @@ const LogIn = () => {
       .then((result)=>{
           let gitUser=result.user 
           navigate(loc?.state ? loc.state : '/')
+          
           toast.success('successfully log in')
           console.log(gitUser);
       })
@@ -82,15 +88,23 @@ const LogIn = () => {
    }
    
    setErroring('')
-   setSuccess('')
+  //  setSuccess('')
    signingByEmailAndPassword(email,password)
    .then((result)=>{
+   
     let emailUser=result.user 
-    navigate(loc?.state ? loc.state : '/')
     console.log(emailUser);
     toast.success('Successfully Log In')
-    setSuccess('Successfully registered')
-    
+     setSuccess('Successfully In')
+     console.log(success);
+     setTimeout(()=>{
+      navigate(loc?.state ? loc.state : '/')
+     },1000)
+    //  navigate(loc?.state ? loc.state : '/')
+  //   console.log(emailUser);
+  //  toast.success('Successfully Log In')
+  //   setSuccess('Successfully In')
+  //   console.log(success);
    })
    .catch(er=>{
   toast.error('Not Matched')
@@ -99,11 +113,17 @@ const LogIn = () => {
   //  console.log(erroring);
   }
 
+  console.log(success);
+
 
   function handleSignInBytwitter() {
     signingByTwitter()
     .then(result=>{
-      let twitterUser=result.user 
+      let twitterUser=result.user
+      setTimeout(() => {
+        navigate(loc?.state ? loc.state : '/')
+      }, 1000); 
+      toast.success('Successfully log In')
       console.log(twitterUser);
     })
     .catch(er=>{
