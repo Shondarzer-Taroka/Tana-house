@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom"
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { FaPeopleArrows } from "react-icons/fa";
 import { FaCircleUser } from "react-icons/fa6";
 const NavBar = () => {
     let { user, signingOut,loading } = useContext(AuthContext)
@@ -38,7 +37,7 @@ const NavBar = () => {
             <div className="navbar-end">
                 {
                  loading ? <h1>loading</h1> : <div className="flex gap-1">
-                 {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img  className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">sign out</button>  </div> : <button onClick={signingOutFromFirebase} className="btn"><Link to={'/log'}>Log In</Link></button>}
+                 {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img  className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">sign out</button>  </div> : <button onClick={''} className="btn"><Link to={'/log'}>Log In</Link></button>}
 
                  
              </div>
@@ -48,7 +47,6 @@ const NavBar = () => {
                 {/* <div className="flex gap-1">
                     {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> <img  className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> </div> <button onClick={signingOutFromFirebase} className="btn">sign out</button>  </div> : <button onClick={signingOutFromFirebase} className="btn"><Link to={'/log'}>Log In</Link></button>}
 
-                    
                 </div> */}
 
             </div>

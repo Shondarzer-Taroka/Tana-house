@@ -1,5 +1,5 @@
 import { useContext,useState,} from "react";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { IoEyeOffSharp } from "react-icons/io5";
 import { FaEye } from "react-icons/fa6";
@@ -12,7 +12,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const LogIn = () => {
 
-  let {signInBygitHub,signingByEmailAndPassword,signInBygoogle}=useContext(AuthContext)
+  let {signInBygitHub,signingByEmailAndPassword,signInBygoogle,signingByTwitter}=useContext(AuthContext)
   let [toggle,setToggle]=useState(false)
   let [erroring,setErroring]=useState('')
   let [success,setSuccess]=useState('')
@@ -99,6 +99,18 @@ const LogIn = () => {
   //  console.log(erroring);
   }
 
+
+  function handleSignInBytwitter() {
+    signingByTwitter()
+    .then(result=>{
+      let twitterUser=result.user 
+      console.log(twitterUser);
+    })
+    .catch(er=>{
+      console.log(er);
+    })
+  }
+
     return (
 
 <div className="hero min-h-screen bg-base-200">
@@ -144,6 +156,7 @@ const LogIn = () => {
         
         <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
         <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button>
+        <button onClick={handleSignInBytwitter} className="btn btn-outline"> <FaTwitter></FaTwitter> <span>Twitter</span> </button>
                 <p>Not Registered? <Link to={'/reg'}>please Register</Link> </p>
         </div>
     </div>

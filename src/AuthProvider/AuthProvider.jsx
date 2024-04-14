@@ -1,9 +1,12 @@
 import { createContext, useEffect, useState } from "react";
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut,GithubAuthProvider, updateProfile, createUserWithEmailAndPassword, signInWithEmailAndPassword  } from "firebase/auth";
 import { auth } from "../FireBse/fireBase.config";
+import { TwitterAuthProvider } from "firebase/auth";
+
 
 export const AuthContext=createContext(null)
 const googleProvider = new GoogleAuthProvider();
+const twitterProvider = new TwitterAuthProvider();
 const gitHubprovider = new GithubAuthProvider();
 const AuthProvider = ({children}) => {
     const [spinner,setSpinner]=useState(false)
@@ -32,6 +35,11 @@ const AuthProvider = ({children}) => {
     function signingByEmailAndPassword(email,password) {
         return signInWithEmailAndPassword(auth,email,password)
     }
+
+    function signingByTwitter() {
+        return signInWithPopup(auth,twitterProvider)
+
+    }
     
     function updateProfiling(name,url) {
         
@@ -55,7 +63,7 @@ const AuthProvider = ({children}) => {
     },[])
 
     console.log(user);
-    let authInfo={signInBygoogle,signingOut,signInBygitHub,updateProfiling,createUser,signingByEmailAndPassword,user,loading,setSpinner,spinner}
+    let authInfo={signInBygoogle,signingOut,signInBygitHub,updateProfiling,createUser,signingByEmailAndPassword,signingByTwitter,user,loading,setSpinner,spinner}
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

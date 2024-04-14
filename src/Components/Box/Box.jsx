@@ -1,6 +1,5 @@
 // import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import room from '../../assets/hm.png'
 import { IoLocationSharp } from "react-icons/io5";
 const Box = ({box}) => {
     let {id,image,estate_title,segment_name,price,area,location,facilities,status}=box

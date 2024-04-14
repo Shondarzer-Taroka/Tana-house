@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 import Box from "../Box/Box";
-import { data } from "autoprefixer";
-
 
 const ResidentialSection = () => {
    let [box,setBox]= useState([])
     useEffect(()=>{
-        fetch('/public/residential.json')
+        fetch('/residential.json')
         .then(res=> res.json())
         .then(data => setBox(data))
     },[])

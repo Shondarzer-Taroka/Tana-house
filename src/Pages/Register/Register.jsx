@@ -18,12 +18,12 @@ const Register = () => {
   let [toggle,setToggle]=useState(false)
   let [erroring,setErroring]=useState('')
   let [success,setSuccess]=useState('')
-  let {signInBygoogle,signInBygitHub,createUser,user,updateProfiling,setSpinner}=useContext(AuthContext)
-  let {   
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },}= useForm()
+  let {createUser,updateProfiling}=useContext(AuthContext)
+  // let {   
+  //   register,
+  //   handleSubmit,
+  //   watch,
+  //   formState: { errors },}= useForm()
   
     // function
     const onsubmit = (e) => {
@@ -78,29 +78,31 @@ const Register = () => {
     }
 
 
-    function handleRegisterBygoogle() {
-        signInBygoogle()
-        .then((result)=>{
-          let googleUser=result.user 
+    // function handleRegisterBygoogle() {
+    //     signInBygoogle()
+    //     .then((result)=>{
+    //       let googleUser=result.user 
          
-          navigate(loc?.state ? loc.state : '/')
-            console.log(googleUser.photoURL);
-        })
-        .catch(er=>{
-            console.log(er);
-        })
-    }
-    function handleRegisterBygitHub() {
-        signInBygitHub()
-        .then((result)=>{
-            let gitUser=result.user 
-            navigate(loc?.state ? loc.state : '/')
-            console.log(gitUser);
-        })
-        .catch(er=>{
-            console.log(er);
-        })
-    }
+    //       navigate(loc?.state ? loc.state : '/')
+    //         console.log(googleUser.photoURL);
+    //     })
+    //     .catch(er=>{
+    //         console.log(er);
+    //     })
+    // }
+    // function handleRegisterBygitHub() {
+    //     signInBygitHub()
+    //     .then((result)=>{
+    //         let gitUser=result.user 
+    //         navigate(loc?.state ? loc.state : '/')
+    //         console.log(gitUser);
+    //     })
+    //     .catch(er=>{
+    //         console.log(er);
+    //     })
+    // }
+
+
 
    
     return (
@@ -155,11 +157,11 @@ const Register = () => {
         </div>
       </form>
 
-      <h1 className="m-5">Or Register with </h1>
+      {/* <h1 className="m-5">Or Register with </h1> */}
         <div className="form-control flex gap-4 p-5">
         
-        <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
-        <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button>
+        {/* <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
+        <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button> */}
                 <p>Aleady Register? <Link to={'/log'}>please Log In</Link> </p>
                
         </div>

@@ -5,7 +5,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Keyboard, Pagination, Navigation,Autoplay } from 'swiper/modules';
-import banner from '../../assets/Shiny Overlay.svg'
+// import banner from '../../assets/Shiny Overlay.svg'
+import banner from '../../assets/Shiny Overlay.jpg'
 import bannerImg from '../../assets/bannerImg.png'
 const Banner = () => {
 
