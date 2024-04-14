@@ -16,7 +16,7 @@ const Error = () => {
         <div  className=''>
             <h1 className='text-[80px] font-bold font-poppins text-center'>404</h1>
             <button className='btn btn-info mr-2' onClick={goBack}>Go Back</button>
-            <button className='btn btn-info' onClick={goBack}>Home</button>
+            <button className='btn btn-info' onClick={goHome}>Home</button>
         </div>
 
         </div>
