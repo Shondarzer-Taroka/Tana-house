@@ -8,6 +8,7 @@ import EstateDetails from "../Pages/EstateDetails/EstateDetails";
 import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
 import Blog from "../Pages/Blog/Blog";
 import Gallery from "../Pages/Gallery/Gallery";
+import Error from "../Pages/Error/Error";
 
 
 
@@ -15,6 +16,7 @@ import Gallery from "../Pages/Gallery/Gallery";
     const router=createBrowserRouter([
         {
             path:'/',
+            errorElement: <Error></Error>,
             element: <Root></Root>,
             children:[
                 {
