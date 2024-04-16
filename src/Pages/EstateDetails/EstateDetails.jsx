@@ -16,7 +16,7 @@ const EstateDetails = () => {
     let { image, estate_title, segment_name, description, price, status, area, location, facilities } = finding_data
     return (
      
-        <section id="estate-container"  >
+        <section id="estate-container" className="p-3 md:p-1" >
                <Helmet>
                 <title>Estate Details</title>
                </Helmet>

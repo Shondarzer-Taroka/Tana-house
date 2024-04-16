@@ -1,21 +1,21 @@
 @media only screen and (max-width: 378px) {
 
- .mrt{margin-top: 100%; } 
+ .mrt{margin-top: 10%; } 
  /* .mrt2{margin-top: 10%; }  */
  /* .mrt{margin-top: 100%; }  */
 
 }
-@media only screen and (min-width: 382px) and (max-width:500px) {
+@media only screen and (min-width: 378px) and (max-width:500px) {
 
  /* .mrt{margin-top: 100%; }  */
- .mrt2{margin-top: 67%; } 
+ .mrt2{margin-top: 10%; } 
  /* .mrt{margin-top: 100%; }  */
 
 }
 @media only screen and (min-width: 500px)   and (max-width:768px){
 
  /* .mrt{margin-top: 100%; }  */
- .mrt3{margin-top: 33%;} 
+ .mrt3{margin-top: 10%;} 
  /* .mrt{margin-top: 100%; }  */
 
 }

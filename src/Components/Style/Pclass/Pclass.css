@@ -1,0 +1,9 @@
+.ty::after{
+   /* content: ''; */
+   position: absolute;
+   bottom: 0;
+   width: 100px;
+   height: 5px;
+   background: rebeccapurple;
+   z-index: 10000;
+}

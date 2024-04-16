@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 
 const Error = () => {
@@ -13,6 +14,9 @@ const Error = () => {
     }
     return (
         <div className='flex justify-center items-center flex-col h-[400px]'> 
+        <Helmet>
+            <title>ERROR PAGE</title>
+        </Helmet>
         <div  className=''>
             <h1 className='text-[80px] font-bold font-poppins text-center'>404</h1>
             <button className='btn btn-info mr-2' onClick={goBack}>Go Back</button>

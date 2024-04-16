@@ -58,7 +58,7 @@ const Banner = () => {
         <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins'>view property</button>
 </aside>
 
-<aside>
+<aside className='pt-3 md:p-1 '>
 <img className='w-[300px] h-[360px] border-[5px] border-black rounded-tl-[29px] rounded-tr-[5px] rounded-bl-[5px] rounded-br-[29px] shadow-2xl shadow-black bg-none' src={'https://i.ibb.co/WvRMYmM/bl13.jpg'} alt="" />
 </aside>
 
@@ -115,7 +115,7 @@ const Banner = () => {
         <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins'>view property</button>
 </aside>
 
-<aside>
+<aside className='pt-3 md:p-1 '>
 <img className='w-[300px] h-[360px] border-[5px] border-black rounded-tl-[29px] rounded-tr-[5px] rounded-bl-[5px] rounded-br-[29px] shadow-2xl shadow-black bg-none' src={'https://i.ibb.co/sjwVcst/bl14.jpg'} alt="" />
 </aside>
 
@@ -132,7 +132,7 @@ const Banner = () => {
         <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins'>view property</button>
 </aside>
 
-<aside>
+<aside className='pt-3 md:p-1 '>
     <img className='w-[300px] h-[360px] border-[5px] border-black rounded-tl-[29px] rounded-tr-[5px] rounded-bl-[5px] rounded-br-[29px] shadow-2xl shadow-black bg-none' src={'https://i.ibb.co/26gxshJ/bl15.jpg'} alt="" />
 </aside>
 

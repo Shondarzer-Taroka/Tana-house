@@ -44,20 +44,20 @@ const LogIn = () => {
         })
     }
 
-    function handleRegisterBygitHub() {
-      signInBygitHub()
-      .then((result)=>{
-          let gitUser=result.user 
-          navigate(loc?.state ? loc.state : '/')
+  //   function handleRegisterBygitHub() {
+  //     signInBygitHub()
+  //     .then((result)=>{
+  //         let gitUser=result.user 
+  //         navigate(loc?.state ? loc.state : '/')
           
-          toast.success('successfully log in')
-          console.log(gitUser);
-      })
-      .catch(er=>{
-          console.log(er);
-          toast.error(er.message)
-      })
-  }
+  //         toast.success('successfully log in')
+  //         console.log(gitUser);
+  //     })
+  //     .catch(er=>{
+  //         console.log(er);
+  //         toast.error(er.message)
+  //     })
+  // }
 
 
 
@@ -71,17 +71,20 @@ const LogIn = () => {
 
    if (password.length<6) {
     // console.log('take at least 6 characters');
+    toast.error('take at least 6 characters')
      setErroring('take at least 6 characters')
   return ;
  
     
    }
    else if (!/[A-Z]/.test(password)) {
+    toast.error('take one uppercase')
      setErroring('take one uppercase')
    return;
     // console.log('take one uppercase');
    }
    else if (!/[a-z]/.test(password)) {
+    toast.error('take one lowercase')
     setErroring('take one lowercase')
     return;
     // console.log('take one lowercase');
@@ -107,7 +110,7 @@ const LogIn = () => {
   //   console.log(success);
    })
    .catch(er=>{
-  toast.error('Not Matched')
+  toast.error('Invalid Email Or Password')
     console.log(er);
    })
   //  console.log(erroring);
@@ -161,7 +164,7 @@ const LogIn = () => {
              </span>
            
           </div>
-          { <span className="text-red-500">{erroring}</span> }
+          {/* { <span className="text-red-500">{erroring}</span> } */}
           {/* <input type="password" placeholder="password" className="input input-bordered" required /> */}
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
@@ -175,7 +178,7 @@ const LogIn = () => {
         <div className="form-control flex gap-4 p-5">
         
         <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
-        <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button>
+        {/* <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button> */}
         <button onClick={handleSignInBytwitter} className="btn btn-outline"> <FaTwitter></FaTwitter> <span>Twitter</span> </button>
                 <p>Not Registered? <Link to={'/reg'}>please Register</Link> </p>
         </div>

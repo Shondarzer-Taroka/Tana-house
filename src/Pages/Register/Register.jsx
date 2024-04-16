@@ -35,16 +35,19 @@ const Register = () => {
      console.log(email,password,photo,userName);
 
      if (password.length<6) {
+      toast.error('take at least 6 characters')
        setErroring('take at least 6 characters')
     return ;
    
       
      }
      else if (!/[A-Z]/.test(password)) {
+      toast.error('take one uppercase')
        setErroring('take one uppercase')
      return;
      }
      else if (!/[a-z]/.test(password)) {
+      toast.error('take one lowercase')
       setErroring('take one lowercase')
       return;
      }
@@ -131,7 +134,7 @@ const Register = () => {
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" placeholder="email" name="email" className="input input-bordered"  />
+          <input type="email" placeholder="email" name="email" className="input input-bordered"  required/>
         </div>
         <div className="form-control">
           <label className="label">
@@ -144,14 +147,14 @@ const Register = () => {
             <span className="label-text">Password</span>
           </label>
           <div className="relative">
-             <input type={toggle? 'text' : 'password'} name="password"  placeholder="password"  className="input input-bordered"  />
+             <input type={toggle? 'text' : 'password'} name="password" required placeholder="password"  className="input input-bordered"  />
              <span onClick={handleToggle} className="absolute bottom-[17px] right-[-0px]">
               {toggle ? <FaEye /> :<  IoEyeOffSharp /> }
             
              </span>
             
           </div>
-         {erroring && <p className="text-red-500" >{erroring}</p> }
+         {/* {erroring && <p className="text-red-500" >{erroring}</p> } */}
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>

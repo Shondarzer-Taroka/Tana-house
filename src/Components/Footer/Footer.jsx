@@ -1,4 +1,5 @@
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,19 +15,25 @@ const Footer = () => {
 
           <menu id="content" className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 py-5">
             <div>
-              <p> <a href="#">Home</a></p>
-              <p> <a href="#">Profile</a></p>
+              <p> <Link className="underline" to={'/'}>Home</Link></p>
+              <p> <Link className="underline" to={'/update'}>Update Profile</Link></p>
+              <p> <Link className="underline" to={'/gallery'}>Gallery</Link></p>
+             
+              
+              {/* <p> <a href="#">Home</a></p>
+              <p> <a href="#">Profile</a></p> */}
               {/* <p> <a href="#">Home</a></p>
               <p> <a href="#">Home</a></p> */}
             </div>
 
             <div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique totam reprehenderit iste, pariatur praesentium dolor cum itaque expedita.</p>
+              <p>
+                This is a dynamic online platform offering a diverse range of home improvement products and services. From furniture to decor, lighting, and renovation solutions.</p>
             </div>
 
             <div>
               <div className="form-control">
-               
+
 
                 <div className="md:flex items-center">
                   <input type="email" placeholder="email" name="email" className="input input-bordered" />
@@ -41,23 +48,23 @@ const Footer = () => {
 
           </menu>
 
-         <menu>
-          <div className="w-full h-[6px] bg-white rounded-3xl"></div>
-          <div>
-            <h1 className="text-center mb-2 font-bold ">follow us</h1>
-            <div className="flex gap-2 justify-center">
-              <FaFacebook className="text-[30px]"></FaFacebook>
-              <FaGithub className="text-[30px]"></FaGithub>
-              <FaInstagram className="text-[30px]"></FaInstagram>
-              <FaYoutube className="text-[30px]"></FaYoutube>
+          <menu>
+            <div className="w-full h-[6px] bg-white rounded-3xl"></div>
+            <div>
+              <h1 className="text-center mb-2 font-bold ">follow us</h1>
+              <div className="flex gap-2 justify-center">
+                <FaFacebook className="text-[30px]"></FaFacebook>
+                <FaGithub className="text-[30px]"></FaGithub>
+                <FaInstagram className="text-[30px]"></FaInstagram>
+                <FaYoutube className="text-[30px]"></FaYoutube>
+              </div>
             </div>
-          </div>
 
-          <div className="text-center mt-3" >
-            {/* <h1 className="text-4xl font-semibold">Fitro</h1> */}
-            <small> <span className="text-2xl font-semibold">Fitro</span> All Rights Reserved</small>
-          </div>
-         </menu>
+            <div className="text-center mt-3" >
+              {/* <h1 className="text-4xl font-semibold">Fitro</h1> */}
+              <small> <span className="text-2xl font-semibold">TaNa House</span> All Rights Reserved</small>
+            </div>
+          </menu>
 
         </aside>
       </section>

@@ -1,4 +1,5 @@
 import PhotoAlbum from "react-photo-album";
+import SpBox from "../SpBox/SpBox";
 
 const photos = [
   { src: "https://i.ibb.co/fv6TT7J/bl1.jpg", width: 800, height:  600 },
@@ -17,6 +18,7 @@ const photos = [
 const Gallery = () => {
     return (
           <>
+          <SpBox></SpBox>
           <h1 className="text-3xl font-bold text-center my-7">Our Gallery</h1>
         <PhotoAlbum layout="rows" photos={photos} />
      </>);

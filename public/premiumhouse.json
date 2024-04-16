@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p15-516x360.jpg",
+        "title": "North Dillard Street",
+        "price": "250",
+        "location": "4330 Bell Shoals Rd",
+        "beds": 3,
+        "baths": 2,
+        "sqr_fit": 528,
+        "status": "sale"
+    },
+    {
+        "id": 2,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p16-516x360.jpg",
+        "title": "Eaton Garth Penthouse",
+        "price": "180,000",
+        "location": "7722 18th Ave, Brooklyn",
+        "beds": 4,
+        "baths": 2,
+        "sqr_fit": 524,
+        "status": "sale"
+    },
+    {
+        "id": 3,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p17-516x360.jpg",
+        "title": "New Apartment Nice Wiew",
+        "price": "850",
+        "location": "42 Avenue O, Brooklyn",
+        "beds": 3,
+        "baths": 2,
+        "sqr_fit": 593,
+        "status": "rent"
+    },
+    {
+        "id": 4,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p11-516x360.jpg",
+        "title": "Luxury Family Home",
+        "price": "395,000",
+        "location": "1800-1818 79th St",
+        "beds": 5,
+        "baths": 4,
+        "sqr_fit": 458,
+        "status": "sale"
+    },
+    {
+        "id": 5,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p13-516x360.jpg",
+        "title": "Skyper Pool Apartment",
+        "price": "280,000",
+        "location": "1020 Bloomingdale Ave",
+        "beds": 5,
+        "baths": 1,
+        "sqr_fit": 573,
+        "status": "rent"
+    },
+    {
+        "id": 6,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p15-516x360.jpg",
+        "title": "North Dillard Street",
+        "price": "250",
+        "location": "4330 Bell Shoals Rd",
+        "beds": 3,
+        "baths": 5,
+        "sqr_fit": 477,
+        "status": "sale"
+    },
+    {
+        "id": 7,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p16-516x360.jpg",
+        "title": "Eaton Garth Penthouse",
+        "price": "180,000",
+        "location": "7722 18th Ave, Brooklyn",
+        "beds": 2,
+        "baths": 5,
+        "sqr_fit": 552,
+        "status": "rent"
+    },
+    {
+        "id": 8,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p17-516x360.jpg",
+        "title": "New Apartment Nice Wiew",
+        "price": "850",
+        "location": "42 Avenue O, Brooklyn",
+        "beds": 3,
+        "baths": 4,
+        "sqr_fit": 572,
+        "status": "rent"
+    },
+    {
+        "id": 9,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p11-516x360.jpg",
+        "title": "Luxury Family Home",
+        "price": "395,000",
+        "location": "1800-1818 79th St",
+        "beds": 4,
+        "baths": 1,
+        "sqr_fit": 599,
+        "status": "rent"
+    },
+    {
+        "id": 10,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p13-516x360.jpg",
+        "title": "Skyper Pool Apartment",
+        "price": "280,000",
+        "location": "1020 Bloomingdale Ave",
+        "beds": 5,
+        "baths": 4,
+        "sqr_fit": 570,
+        "status": "rent"
+    },
+    {
+        "id": 11,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p15-516x360.jpg",
+        "title": "North Dillard Street",
+        "price": "250",
+        "location": "4330 Bell Shoals Rd",
+        "beds": 5,
+        "baths": 4,
+        "sqr_fit": 480,
+        "status": "sale"
+    },
+    {
+        "id": 12,
+        "image": "https://demoapus1.com/justhome/wp-content/uploads/2024/03/p16-516x360.jpg",
+        "title": "Eaton Garth Penthouse",
+        "price": "180,000",
+        "location": "7722 18th Ave, Brooklyn",
+        "beds": 2,
+        "baths": 4,
+        "sqr_fit": 577,
+        "status": "rent"
+    }
+    
+]

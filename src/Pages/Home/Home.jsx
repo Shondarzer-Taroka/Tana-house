@@ -3,6 +3,7 @@ import Banner from "../../Components/Banner/Banner";
 import ResidentialSection from "../../Components/ResidentialSection/ResidentialSection";
 
 const Home = () => {
+   
     return (
         <div>
             <Helmet>

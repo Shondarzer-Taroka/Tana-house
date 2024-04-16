@@ -3,11 +3,19 @@ import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 const Root = () => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <section>
+               <div className="max-w-6xl mx-auto">
             <NavBar></NavBar>
              <Outlet></Outlet>
-             <Footer></Footer>
+             
         </div>
+        <div className="h-[50px]"></div>
+        <div>
+            <Footer></Footer>
+        </div>
+       
+        </section>
+     
     );
 };
 
