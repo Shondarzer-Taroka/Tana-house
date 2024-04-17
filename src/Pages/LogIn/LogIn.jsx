@@ -140,6 +140,7 @@ const LogIn = () => {
       console.log(twitterUser);
     })
     .catch(er=>{
+      toast.error(er.message)
       console.log(er);
     })
   }
