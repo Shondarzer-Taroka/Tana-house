@@ -69,26 +69,26 @@ const LogIn = () => {
     // setErroring('')
   //  console.log(email,password);
 
-   if (password.length<6) {
-    // console.log('take at least 6 characters');
-    toast.error('take at least 6 characters')
-     setErroring('take at least 6 characters')
-  return ;
+  //  if (password.length<6) {
+  //   // console.log('take at least 6 characters');
+  //   toast.error('take at least 6 characters')
+  //    setErroring('take at least 6 characters')
+  // return ;
  
     
-   }
-   else if (!/[A-Z]/.test(password)) {
-    toast.error('take one uppercase')
-     setErroring('take one uppercase')
-   return;
-    // console.log('take one uppercase');
-   }
-   else if (!/[a-z]/.test(password)) {
-    toast.error('take one lowercase')
-    setErroring('take one lowercase')
-    return;
-    // console.log('take one lowercase');
-   }
+  //  }
+  //  else if (!/[A-Z]/.test(password)) {
+  //   toast.error('take one uppercase')
+  //    setErroring('take one uppercase')
+  //  return;
+  //   // console.log('take one uppercase');
+  //  }
+  //  else if (!/[a-z]/.test(password)) {
+  //   toast.error('take one lowercase')
+  //   setErroring('take one lowercase')
+  //   return;
+  //   // console.log('take one lowercase');
+  //  }
    
    setErroring('')
   //  setSuccess('')
@@ -168,12 +168,12 @@ const LogIn = () => {
             <span className="label-text">Password</span>
           </label>
           <div className="relative">
-             <input type={toggle? 'text' : 'password'} placeholder="password" required name="password" className="input input-bordered"  />
-             <span onClick={handleToggle} className="absolute bottom-[17px] right-[3px]">
+             <input type="password" placeholder="password" required name="password" className="input input-bordered"  />
+             {/* <span onClick={handleToggle} className="absolute bottom-[17px] right-[3px]">
               {toggle ? <FaEye /> :<  IoEyeOffSharp /> }
             
-             </span>
-           
+             </span> */}
+           {/* {toggle? 'text' : 'password'} */}
           </div>
           {/* { <span className="text-red-500">{erroring}</span> } */}
           {/* <input type="password" placeholder="password" className="input input-bordered" required /> */}
@@ -191,7 +191,7 @@ const LogIn = () => {
         <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
         {/* <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button> */}
         <button onClick={handleSignInBytwitter} className="btn btn-outline"> <FaTwitter></FaTwitter> <span>Twitter</span> </button>
-                <p>Not Registered? <Link className="underline text-blue-500" to={'/reg'}>please Register</Link> </p>
+                <p>Not Registered? <Link to={'/reg'}>please <span className="underline text-blue-500 font-semibold">Register</span> </Link> </p>
         </div>
     </div>
   </div>

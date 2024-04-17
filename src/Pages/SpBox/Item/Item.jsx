@@ -16,7 +16,7 @@ const Item = ({item}) => {
             </aside>
 
             <aside className="p-2">
-                <div className="flex gap-3">
+                <div className="flex gap-3 flex-wrap">
                     <h1 className="text-3xl font-bold">{title}</h1>
                     <p className="text-red-500 text-3xl font-bold">${price} </p>
                 </div>

@@ -24,9 +24,9 @@ const Box = ({box}) => {
 
             <div id='content' className='p-4 space-y-2'>
              <h2 className='font-bold text-2xl'>{estate_title}</h2>
-            <p id='location' className='flex gap-2 items-center text-[#9d9faa]'><IoLocationSharp /> <span>{location}</span> </p>
+            <p id='location' className='flex gap-2 items-center text-[#6f6f70]'><IoLocationSharp /> <span>{location}</span> </p>
             <hr />
-            <div id='facilities' className='flex gap-3 text-[#9d9faa] items-center'>
+            <div id='facilities' className='flex gap-3 text-[#6f6f70] items-center'>
              {facilities.map((value,indx)=>{
                return <p key={indx}>{value}</p>
              })}

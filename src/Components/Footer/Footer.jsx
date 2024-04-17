@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
 
-      <section className="bg-[#c08267]">
+      <section className="bg-[#fd7d45dc]">
         <aside className="p-3">
           <menu className="flex justify-evenly items-center">
             <div className="w-1/3 h-[5px] bg-white"></div>
@@ -35,8 +35,8 @@ const Footer = () => {
               <div className="form-control">
 
 
-                <div className="md:flex items-center">
-                  <input type="email" placeholder="email" name="email" className="input input-bordered" />
+                <div className="md:flex gap-0 items-center">
+                  <input type="email" placeholder="usermail@gmail.com" name="email" className="input input-bordered" />
                   <button className="btn btn-success">subscribe</button>
                 </div>
               </div>

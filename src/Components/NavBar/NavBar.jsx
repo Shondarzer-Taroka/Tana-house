@@ -37,8 +37,8 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
                 {
-                    loading ? <h1>loading</h1> : <div className="flex gap-1">
-                        {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">sign out</button>  </div> : <Link to={'/log'}> <button onClick={''} className="btn">Log In</button> </Link>}
+                    loading ? <h1> <span className="loading loading-spinner text-primary"></span> </h1> : <div className="flex gap-1">
+                        {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">Log out</button>  </div> : <Link to={'/log'}> <button onClick={''} className="btn">Log In</button> </Link>}
 
                     </div>
                 }
