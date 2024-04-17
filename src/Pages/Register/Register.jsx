@@ -14,7 +14,7 @@ import { auth } from "../../FireBse/fireBase.config";
 const Register = () => {
   let navigate= useNavigate()
   let loc=useLocation() 
-  console.log(loc);
+  // console.log(loc);
   let [toggle,setToggle]=useState(false)
   let [erroring,setErroring]=useState('')
   let [success,setSuccess]=useState('')
@@ -32,7 +32,7 @@ const Register = () => {
       let password=e.target.password.value    
       let userName=e.target.name.value
       let photo=e.target.image.value 
-     console.log(email,password,photo,userName);
+    //  console.log(email,password,photo,userName);
     
      if (password.length<6) {
       toast.error('take at least 6 characters')
@@ -79,17 +79,19 @@ const Register = () => {
      })
      .catch(er=>{
       //  toast.error(er.message)
-       let storeError=[]
-       let errorLetter=er.message.split(' ')[2].split('')
-       for (let i = 6; i < errorLetter.length-2; i++) {
+      //  let storeError=[]
+      //  let errorLetter=er.message.split(' ')[2].split('')
+      //  for (let i = 6; i < errorLetter.length-2; i++) {
         
-        storeError.push(errorLetter[i])
-        // console.log(ll[i]);
+      //   storeError.push(errorLetter[i])
+     
         
-       }
-      //  console.log(storeError.join(''));
-       toast.error(storeError.join(''))
-      // console.log(er.message.split(' ')[2].split(''));
+      //  }
+  
+      //  toast.error(storeError.join(''))
+       er.message=='Firebase: Error (auth/email-already-in-use).' ? toast.error('Email already in used'):''
+      console.log(er.message);
+     
      
      })
     }     
@@ -130,12 +132,12 @@ const Register = () => {
   <Helmet>
     <title>Register</title>
   </Helmet>
-  <div className="hero-content flex-col ">
+  <div className="md:hero-content flex-col ">
     <div className="text-center">
       <h1 className="text-5xl font-bold">Register</h1>
       {/* <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
     </div>
-    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="my-3 md:my-1 card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={onsubmit} className="card-body">
         <div className="form-control">
           <label className="label">
@@ -161,7 +163,7 @@ const Register = () => {
           </label>
           <div className="relative">
              <input type={toggle? 'text' : 'password'} name="password" required placeholder="password"  className="input input-bordered"  />
-             <span onClick={handleToggle} className="absolute bottom-[17px] right-[-0px]">
+             <span onClick={handleToggle} className="absolute bottom-[17px] right-[1px]">
               {toggle ? <FaEye /> :<  IoEyeOffSharp /> }
             
              </span>
@@ -182,7 +184,7 @@ const Register = () => {
         
         {/* <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
         <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button> */}
-                <p>Aleady Register? <Link to={'/log'}>please Log In</Link> </p>
+                <p>Aleady Registered? <Link className="underline text-blue-500" to={'/log'}>please Log In</Link> </p>
                
         </div>
 

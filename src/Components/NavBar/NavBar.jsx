@@ -28,7 +28,7 @@ const NavBar = () => {
                         {navlinks}
                     </ul>
                 </div>
-                <a className=" font-bold font-poppins"> <span>TaNa </span>  <span>House</span></a>
+                <a className=" md:text-4xl font-bold font-poppins flex items-center"> <span>TaNa </span>  <span className="md:text-2xl text-red-400">House</span></a>
             </div>
             <div className=" navbar-center hidden lg:flex">
                 <ul className=" menu menu-horizontal px-1">

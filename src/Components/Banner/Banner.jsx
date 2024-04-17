@@ -50,16 +50,16 @@ const Banner = () => {
 <section className='lg:h-[560px] flex md:flex-row items-center flex-col-reverse md:justify-evenly'  style={{background:'linear-gradient(191deg, rgba(24,52,108,1) 19%, rgba(21,46,76,1) 30%, rgba(121,87,180,1) 97%)'}}>
 
 <aside id="text-content" className='md:w-[50%] space-y-7 p-14 md:p-1'>
-    <h1 className="text-[#fcfcff] text-4xl font-bold font-poppins">WE BUILD <br />
+    <h1 className="text-[#fcfcff] text-4xl font-bold font-poppins" data-aos="fade-left" >WE BUILD <br />
         YOUR DREAM HOME </h1>
-    <p className='opacity-90 text-white'> we take pride in being the architects of your dreams,
+    <p className='opacity-90 text-white' data-aos="fade-left" data-aos-delay='1000'> we take pride in being the architects of your dreams,
         transforming your vision of a perfect home
         into a tangible reality </p>
-        <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins'>view property</button>
+        <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins animate__animated animate__fadeInLeft'>Get Started</button>
 </aside>
 
 <aside className='pt-3 md:p-1 '>
-<img className='w-[300px] h-[360px] border-[5px] border-black rounded-tl-[29px] rounded-tr-[5px] rounded-bl-[5px] rounded-br-[29px] shadow-2xl shadow-black bg-none' src={'https://i.ibb.co/WvRMYmM/bl13.jpg'} alt="" />
+<img className='w-[300px] h-[360px] border-[5px] border-black rounded-tl-[29px] rounded-tr-[5px] rounded-bl-[5px] rounded-br-[29px] shadow-2xl shadow-black bg-none animate__animated animate__fadeInUp' src={'https://i.ibb.co/WvRMYmM/bl13.jpg'} alt="" />
 </aside>
 
 </section>
@@ -112,7 +112,7 @@ const Banner = () => {
     <p className='opacity-90 text-white'> we take pride in being the architects of your dreams,
         transforming your vision of a perfect home
         into a tangible reality </p>
-        <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins'>view property</button>
+        <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins animate__animated animate__fadeInLeft'>Get Started</button>
 </aside>
 
 <aside className='pt-3 md:p-1 '>
@@ -129,7 +129,7 @@ const Banner = () => {
     <p className='opacity-90 text-white'> we take pride in being the architects of your dreams,
         transforming your vision of a perfect home
         into a tangible reality </p>
-        <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins'>view property</button>
+        <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins animate__animated animate__fadeInLeft'>Get Started</button>
 </aside>
 
 <aside className='pt-3 md:p-1 '>

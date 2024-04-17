@@ -1,9 +1,9 @@
 .active{
     background-color:transparent !important;
-    padding: 12px !important; 
-    border-radius: 12px !important;
-    border: 2px solid #2f023c !important;
-    color: black !important;
+    /* padding: 12px !important;  */
+    /* border-radius: 12px !important; */
+    /* border: 2px solid #2f023c !important; */
+    color: rgb(202, 38, 38) !important;
     /* height: 44px; */
     /* display: flex;
     align-items: center;

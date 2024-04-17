@@ -151,11 +151,11 @@ const LogIn = () => {
   <Helmet>
     <title>Log In</title>
   </Helmet>
-  <div className="hero-content flex-col">
+  <div className="md:hero-content flex-col">
     <div className="text-center ">
       <h1 className="text-5xl font-bold">Login now!</h1>
     </div>
-    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="my-3 md:my-1 card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form className="card-body" onSubmit={onsubmit}>
         <div className="form-control">
           <label className="label">
@@ -168,7 +168,7 @@ const LogIn = () => {
             <span className="label-text">Password</span>
           </label>
           <div className="relative">
-             <input type={toggle? 'text' : 'password'} placeholder="password" name="password" className="input input-bordered"  />
+             <input type={toggle? 'text' : 'password'} placeholder="password" required name="password" className="input input-bordered"  />
              <span onClick={handleToggle} className="absolute bottom-[17px] right-[3px]">
               {toggle ? <FaEye /> :<  IoEyeOffSharp /> }
             
@@ -191,7 +191,7 @@ const LogIn = () => {
         <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
         {/* <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button> */}
         <button onClick={handleSignInBytwitter} className="btn btn-outline"> <FaTwitter></FaTwitter> <span>Twitter</span> </button>
-                <p>Not Registered? <Link to={'/reg'}>please Register</Link> </p>
+                <p>Not Registered? <Link className="underline text-blue-500" to={'/reg'}>please Register</Link> </p>
         </div>
     </div>
   </div>

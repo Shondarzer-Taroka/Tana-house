@@ -19,7 +19,7 @@ const Gallery = () => {
     return (
           <>
           <SpBox></SpBox>
-          <h1 className="text-3xl font-bold text-center my-7 animate__animated animate__backInUp" >Our Gallery</h1>
+          <h1 className="text-3xl font-bold text-center my-7 animate__animated animate__backInDown" >Our Gallery</h1>
         <PhotoAlbum layout="rows" photos={photos} />
      </>);
 };
