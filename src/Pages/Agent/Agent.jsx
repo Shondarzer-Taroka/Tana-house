@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Agent = () => {
     return (
-        <section className="mt-7 space-y-3">
+        <section className="mt-7 space-y-3 p-2">
             <h6 className="font-semibold text-xl text-[#f8884c] text-center"> Meet Our Agent</h6>
             <h6 className="font-bold text-4xl  text-center"> Our Best Agent</h6>
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -15,7 +15,7 @@ const Agent = () => {
                     <div id="content-agent" className="p-4 space-y-2">
                         <div className="text-center">
                               <h2 className="font-bold text-3xl">Mona Ghaly</h2>
-                      <h5 className="text-xl font-bold">Area Agent</h5>
+                      <h5 className=" font-semibold">Area Agent</h5>
                         </div>
                     
                       <div className="flex gap-1 justify-center">
@@ -34,7 +34,7 @@ const Agent = () => {
                     <div id="content-agent" className="p-4 space-y-2">
                         <div className="text-center">
                               <h2 className="font-bold text-3xl">Sherief El Arafa</h2>
-                      <h5 className="text-xl font-bold">Estate Agent</h5>
+                      <h5 className="font-semibold">Estate Agent</h5>
                         </div>
                     
                       <div className="flex gap-1 justify-center">
@@ -53,7 +53,7 @@ const Agent = () => {
                     <div id="content-agent" className="p-4 space-y-2">
                         <div className="text-center">
                               <h2 className="font-bold text-3xl">Arafa El Sherief</h2>
-                      <h5 className="text-xl font-bold">Team Leader</h5>
+                      <h5 className="font-semibold">Team Leader</h5>
                         </div>
                     
                       <div className="flex gap-1 justify-center">
@@ -72,7 +72,7 @@ const Agent = () => {
                     <div id="content-agent" className="p-4 space-y-2">
                         <div className="text-center">
                               <h2 className="font-bold text-3xl">Aya Magdy</h2>
-                      <h5 className="text-xl font-bold">Buying Agent</h5>
+                      <h5 className="font-semibold">Buying Agent</h5>
                         </div>
                     
                       <div className="flex gap-1 justify-center">
@@ -91,7 +91,7 @@ const Agent = () => {
                     <div id="content-agent" className="p-4 space-y-2">
                         <div className="text-center">
                               <h2 className="font-bold text-3xl">Ghaly Marco</h2>
-                      <h5 className="text-xl font-bold">Real Estate Broker</h5>
+                      <h5 className="font-semibold">Real Estate Broker</h5>
                         </div>
                     
                       <div className="flex gap-1 justify-center">
@@ -110,7 +110,7 @@ const Agent = () => {
                     <div id="content-agent" className="p-4 space-y-2">
                         <div className="text-center">
                               <h2 className="font-bold text-3xl">Fatma Hassan</h2>
-                      <h5 className="text-xl font-bold">Buying Agent</h5>
+                      <h5 className="font-semibold">Buying Agent</h5>
                         </div>
                     
                       <div className="flex gap-1 justify-center">
@@ -135,12 +135,12 @@ const Agent = () => {
             </div>
            
 
-             <article className="flex gap-2 mt-6 items-center w-full h-full">
+             <article className="flex text-center flex-col lg:flex-row gap-2 mt-6 items-center w-full h-full">
 
           
-            <p className="w-[50%]">TaNa House stands as a beacon of excellence in the digital realm, offering a unique blend of unparalleled service and expertise. Our commitment to delivering nothing short of the best experience is evident in every aspect of our platform. From the moment visitors set foot on our site, they are greeted with a seamless and user-friendly interface designed to cater to their every need. Behind the scenes, a team of dedicated experts meticulously curates content and services, ensuring that only the highest quality and most reliable information reaches our audience. But what truly sets TaNa House apart is our unwavering dedication to innovation. We are constantly pushing boundaries, embracing new technologies and strategies to stay at the forefront of the industry. Yet, amidst our quest for progress, we never lose sight of the importance of community. TaNa House is more than just a website; it's a thriving ecosystem where like-minded individuals come together to connect, learn, and grow. Transparency, trustworthiness, and continuous improvement are the cornerstones of our ethos, guiding every decision we make. With a diverse range of content and a steadfast commitment to accessibility, we strive to provide an inclusive experience for all. At the heart of it all lies a passion and dedication that drive us to exceed expectations and set new standards of excellence. Welcome to TaNa House, where the best is not just a goal but a promise we deliver upon every day.</p>
+            <p className="lg:w-[50%] text-center">TaNa House stands as a beacon of excellence in the digital realm, offering a unique blend of unparalleled service and expertise. Our commitment to delivering nothing short of the best experience is evident in every aspect of our platform. From the moment visitors set foot on our site, they are greeted with a seamless and user-friendly interface designed to cater to their every need. Behind the scenes, a team of dedicated experts meticulously curates content and services, ensuring that only the highest quality and most reliable information reaches our audience. But what truly sets TaNa House apart is our unwavering dedication to innovation. We are constantly pushing boundaries, embracing new technologies and strategies to stay at the forefront of the industry. Yet, amidst our quest for progress, we never lose sight of the importance of community. TaNa House is more than just a website; it's a thriving ecosystem where like-minded individuals come together to connect, learn, and grow. Transparency, trustworthiness, and continuous improvement are the cornerstones of our ethos, guiding every decision we make. With a diverse range of content and a steadfast commitment to accessibility, we strive to provide an inclusive experience for all. At the heart of it all lies a passion and dedication that drive us to exceed expectations and set new standards of excellence. Welcome to TaNa House, where the best is not just a goal but a promise we deliver upon every day.</p>
 
-             <div className="w-[50%] h-full">
+             <div className="lg:w-[50%] h-full">
                 <img className="h-full w-full" src="https://i.ibb.co/tcw41gj/cat-3.png" alt="" />
              </div>
         

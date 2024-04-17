@@ -24,11 +24,11 @@ import Error from "../Pages/Error/Error";
                     element: <Home></Home>
                 },
                 {
-                    path:'/log',
+                    path:'/login',
                     element: <LogIn></LogIn>
                 },
                 {
-                    path:'/reg',
+                    path:'/register',
                     element:<Register></Register>
                 },
                 {
@@ -42,7 +42,7 @@ import Error from "../Pages/Error/Error";
                     loader:()=> fetch('/residential.json')
                 },
                 {
-                    path:'/gallery',
+                    path:'/premium',
                     element: <PrivateRoute><Gallery></Gallery></PrivateRoute> 
                 }
 

@@ -184,7 +184,7 @@ const Register = () => {
         
         {/* <button onClick={handleRegisterBygoogle} className="btn btn-outline"> <FaGoogle></FaGoogle> <span> Google</span></button>
         <button onClick={handleRegisterBygitHub} className="btn btn-outline"> <FaGithub></FaGithub> <span>GitHub</span> </button> */}
-                <p>Aleady Registered? <Link  to={'/log'}>please <span className="underline text-blue-500 font-semibold">Log In </span> </Link> </p>
+                <p>Aleady Registered? <Link  to={'/login'}>please <span className="underline text-blue-500 font-semibold">Log In </span> </Link> </p>
                
         </div>
 

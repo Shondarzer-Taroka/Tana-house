@@ -75,7 +75,7 @@ const UpdateProfile = () => {
                 <input type="text" onChange={onchangingimg} value={myImg !=='' ? myImg :  user.photoURL} name="image"  placeholder="Photo URL" className="input input-bordered"  />
               </div>
               <div className="form-control mt-6">
-                <button  className="btn btn-outline">Update Profile</button>
+                <button  className="btn btn-info">Save</button>
 
               </div>
 

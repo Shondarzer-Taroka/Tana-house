@@ -14,7 +14,7 @@ const NavBar = () => {
     let navlinks = <>
         <li><NavLink to={'/'} >Home</NavLink></li>
         <li><NavLink to={'/update'} >Update Profile</NavLink></li>
-        <li><NavLink to={'/gallery'} >Premium Properties</NavLink></li>
+        <li><NavLink to={'/premium'} >Premium Properties</NavLink></li>
     </>
     return (
         <div className=" navbar bg-base-100 font-poppins">
@@ -38,7 +38,7 @@ const NavBar = () => {
             <div className="navbar-end">
                 {
                     loading ? <h1> <span className="loading loading-spinner text-primary"></span> </h1> : <div className="flex gap-1">
-                        {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">Log out</button>  </div> : <Link to={'/log'}> <button onClick={''} className="btn">Log In</button> </Link>}
+                        {user ? <div className="flex items-center gap-2"> <div className="tooltip tooltip-bottom" data-tip={user?.displayName}> {user.photoURL ? <img className=" w-[50px] h-[50px] rounded-full border-[1px] " src={user.photoURL} alt="" /> : <FaCircleUser className="text-3xl" />}  </div> <button onClick={signingOutFromFirebase} className="btn p-2 ">Log out</button>  </div> : <Link to={'/login'}> <button onClick={''} className="btn">Log In</button> </Link>}
 
                     </div>
                 }

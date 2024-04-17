@@ -1,6 +1,7 @@
 // import PhotoAlbum from "react-photo-album";
 import SpBox from "../SpBox/SpBox";
 import Agent from "../Agent/Agent";
+import { Helmet } from "react-helmet-async";
 
 // const photos = [
 //   { src: "https://i.ibb.co/fv6TT7J/bl1.jpg", width: 800, height:  600 },
@@ -19,6 +20,9 @@ import Agent from "../Agent/Agent";
 const Gallery = () => {
     return (
           <>
+          <Helmet>
+            <title>Premium Properties</title>
+          </Helmet>
           <SpBox></SpBox>
           {/* <h1 className="text-3xl font-bold text-center my-7 animate__animated animate__backInDown" >Our Gallery</h1>
         <PhotoAlbum layout="rows" photos={photos} /> */}
