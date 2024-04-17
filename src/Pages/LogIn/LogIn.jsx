@@ -110,8 +110,18 @@ const LogIn = () => {
   //   console.log(success);
    })
    .catch(er=>{
-  toast.error('Invalid Email Or Password')
-    console.log(er);
+  //  toast.error('Invalid Email Or Password')
+    console.log(er.message);
+    let storeError=[]
+    let errorLetter=er.message.split(' ')[2].split('')
+    for (let i = 6; i < errorLetter.length-2; i++) {
+     
+     storeError.push(errorLetter[i])
+     // console.log(ll[i]);
+     
+    }
+   //  console.log(storeError.join(''));
+    er.message=="Firebase: Error (auth/invalid-credential)." ? toast.error( "Invalid Email Or Password"): toast.error(storeError.join(''))
    })
   //  console.log(erroring);
   }

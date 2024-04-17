@@ -33,7 +33,7 @@ const Register = () => {
       let userName=e.target.name.value
       let photo=e.target.image.value 
      console.log(email,password,photo,userName);
-
+    
      if (password.length<6) {
       toast.error('take at least 6 characters')
        setErroring('take at least 6 characters')
@@ -65,6 +65,7 @@ const Register = () => {
       })
       // setSpinner(true)
       let emailUser=result.user 
+      e.target.reset()
       toast.success('Successfully registered')
       setTimeout(()=>{
         navigate(loc?.state ? loc.state : '/')
@@ -77,7 +78,19 @@ const Register = () => {
       setSuccess('Successfully registered')
      })
      .catch(er=>{
-      console.log(er);
+      //  toast.error(er.message)
+       let storeError=[]
+       let errorLetter=er.message.split(' ')[2].split('')
+       for (let i = 6; i < errorLetter.length-2; i++) {
+        
+        storeError.push(errorLetter[i])
+        // console.log(ll[i]);
+        
+       }
+      //  console.log(storeError.join(''));
+       toast.error(storeError.join(''))
+      // console.log(er.message.split(' ')[2].split(''));
+     
      })
     }     
     function handleToggle() {

@@ -1,12 +1,12 @@
-
-.op .active{
-    background-color:transparent;
-    padding: 12px; 
-    border-radius: 12px ;
-    border: 2px solid #23BE0A;
+.active{
+    background-color:transparent !important;
+    padding: 12px !important; 
+    border-radius: 12px !important;
+    border: 2px solid #2f023c !important;
+    color: black !important;
     /* height: 44px; */
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
