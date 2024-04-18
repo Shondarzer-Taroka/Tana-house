@@ -83,6 +83,11 @@ const UpdateProfile = () => {
               
              <button className='btn btn-outline'>Update Profile</button>
               </div> */}
+
+             {/* <div>
+
+             </div> */}
+
             </form>
       
            

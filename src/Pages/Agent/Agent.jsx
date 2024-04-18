@@ -104,13 +104,13 @@ const Agent = () => {
                 </article>
                 <article className="rounded border">
                     <div>
-                        <img className="w-full" src="https://i.ibb.co/mGmDsZj/af3.jpg" alt="" />
+                        <img className="w-full" src="https://i.ibb.co/mGmDsZj/af3.jpg"  />
                     </div>
 
                     <div id="content-agent" className="p-4 space-y-2">
                         <div className="text-center">
                               <h2 className="font-bold text-3xl">Fatma Hassan</h2>
-                      <h5 className="font-semibold">Buying Agent</h5>
+                      <h5 className="font-semibold"> Buying Agent</h5>
                         </div>
                     
                       <div className="flex gap-1 justify-center">
