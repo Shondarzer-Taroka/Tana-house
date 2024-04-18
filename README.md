@@ -21,7 +21,7 @@ Live Site: [view website](https://assignment-nine-75ab9.web.app/)
 - **Authentication**: Secure user authentication ensures only authorized users can access and update their profiles.
 - **Real-time Feedback**: Users receive instant feedback upon successful profile updates, enhancing user experience.
 - **Responsive Design**: The website is designed to be responsive, ensuring a seamless experience across different devices and screen sizes.
- **User-Friendly Interface**: Intuitive design ensures a seamless user experience.
+- **User-Friendly Interface**: Intuitive design ensures a seamless user experience.
  
 ## Features
 
