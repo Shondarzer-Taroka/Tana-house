@@ -25,7 +25,7 @@ const Footer = () => {
 
             <div>
               <p>
-                This is a dynamic online platform offering a diverse range of home improvement products and services. From furniture to decor, lighting, and renovation solutions.</p>
+              TaNa House is a leading website renowned for its exceptional service and expertise. It prides itself on delivering a seamless user experience and providing top-quality content curated by a dedicated team of experts.</p>
             </div>
 
             <div>

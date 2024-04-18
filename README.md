@@ -12,9 +12,9 @@ Currently, two official plugins are available:
 
 
 
-Live Site: [viw site](https://assignment-nine-75ab9.web.app)
+Live Site: [viw website](https://assignment-nine-75ab9.web.app/)
 
-## Features and Characteristics:
+## Characteristics:
 
 
 - **Profile Management**: Users can easily update their profile information, including name and photo URL.
@@ -22,11 +22,20 @@ Live Site: [viw site](https://assignment-nine-75ab9.web.app)
 - **Real-time Feedback**: Users receive instant feedback upon successful profile updates, enhancing user experience.
 - **Responsive Design**: The website is designed to be responsive, ensuring a seamless experience across different devices and screen sizes.
  **User-Friendly Interface**: Intuitive design ensures a seamless user experience.
+ 
+## Features
+
+ - **Secure Authentication**: Firebase authentication system ensures user data security and privacy
+ - **Customizable Profiles**: Users have the ability to personalize their profiles with unique information and photos.
+ - **Cross-Browser Compatibility**:  Ensures compatibility across multiple web browsers, guaranteeing a consistent experience for all users regardless of their browser choice.
+ - **Email Verification**:  Implements email verification for enhanced account security and verification.
+ - **Activity Logging**: Log user actions and activities to track changes made to profiles and ensure accountability.
+  
 
 ## npm Package Used:
 
-- **animate.css**: Web framework for Node.js applications.
-- **aos**: Authentication middleware for Node.js.
-- **Swiper.js**: Real-time bidirectional event-based communication.
+- **Animate.css**
+- **AOS Package**
+- **Swiper slider**
 
 

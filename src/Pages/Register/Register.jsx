@@ -29,19 +29,19 @@ const Register = () => {
     //  console.log(email,password,photo,userName);
     
      if (password.length<6) {
-      toast.error('take at least 6 characters')
+      toast.error('You should take at least 6 characters')
        
     return ;
    
       
      }
      else if (!/[A-Z]/.test(password)) {
-      toast.error('take one uppercase')
+      toast.error('You should take an uppercase')
     
      return;
      }
      else if (!/[a-z]/.test(password)) {
-      toast.error('take one lowercase')
+      toast.error('You should take a lowercase')
      
       return;
      }
