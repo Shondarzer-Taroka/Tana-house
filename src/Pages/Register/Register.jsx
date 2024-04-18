@@ -1,29 +1,23 @@
 import { useContext, useState } from "react";
-import { FaGoogle } from "react-icons/fa";
+
 import { IoEyeOffSharp } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa6";
+
 import { FaEye } from "react-icons/fa6";
 import { Link ,useNavigate,useLocation} from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Helmet } from "react-helmet-async";
-import { useForm } from "react-hook-form";
+
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import { updateProfile } from "firebase/auth";
-import { auth } from "../../FireBse/fireBase.config";
+
+
 const Register = () => {
   let navigate= useNavigate()
   let loc=useLocation() 
   // console.log(loc);
   let [toggle,setToggle]=useState(false)
-  let [erroring,setErroring]=useState('')
-  let [success,setSuccess]=useState('')
   let {createUser,updateProfiling}=useContext(AuthContext)
-  // let {   
-  //   register,
-  //   handleSubmit,
-  //   watch,
-  //   formState: { errors },}= useForm()
+
   
     // function
     const onsubmit = (e) => {
@@ -36,24 +30,24 @@ const Register = () => {
     
      if (password.length<6) {
       toast.error('take at least 6 characters')
-       setErroring('take at least 6 characters')
+       
     return ;
    
       
      }
      else if (!/[A-Z]/.test(password)) {
       toast.error('take one uppercase')
-       setErroring('take one uppercase')
+    
      return;
      }
      else if (!/[a-z]/.test(password)) {
       toast.error('take one lowercase')
-      setErroring('take one lowercase')
+     
       return;
      }
      
-     setErroring('')
-     setSuccess('')
+     
+     
      createUser(email,password)
      .then((result)=>{
       updateProfiling(userName,photo)
@@ -71,11 +65,9 @@ const Register = () => {
         navigate(loc?.state ? loc.state : '/')
         location.reload()
       },1000)
-      // navigate(loc?.state ? loc.state : '/')
-      // toast.success('Successfully registered')
-      // location.reload()
+
       console.log(emailUser);
-      setSuccess('Successfully registered')
+     
      })
      .catch(er=>{
       //  toast.error(er.message)
@@ -135,7 +127,7 @@ const Register = () => {
   <div className="md:hero-content flex-col ">
     <div className="text-center">
       <h1 className="text-5xl font-bold">Register</h1>
-      {/* <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
+     
     </div>
     <div className="my-3 md:my-1 card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={onsubmit} className="card-body">
@@ -169,7 +161,7 @@ const Register = () => {
              </span>
             
           </div>
-         {/* {erroring && <p className="text-red-500" >{erroring}</p> } */}
+         
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>

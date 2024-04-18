@@ -1,8 +1,5 @@
-import { useContext,useState,} from "react";
+import { useContext} from "react";
 import { FaGoogle, FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { IoEyeOffSharp } from "react-icons/io5";
-import { FaEye } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import {  useLocation,useNavigate } from 'react-router-dom';
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -12,24 +9,17 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const LogIn = () => {
 
-  let {signInBygitHub,signingByEmailAndPassword,signInBygoogle,signingByTwitter}=useContext(AuthContext)
-  let [toggle,setToggle]=useState(false)
-  let [erroring,setErroring]=useState('')
-  let [success,setSuccess]=useState('')
+  let {signingByEmailAndPassword,signInBygoogle,signingByTwitter}=useContext(AuthContext)
+
   let navigate= useNavigate()
    let loc=useLocation() 
-  //  console.log(loc);
 
-  function handleToggle() {
-    setToggle(!toggle)
-  }
 
-    // const {signInBygoogle}=useContext(AuthContext)
+   
     function handleRegisterBygoogle() {
         signInBygoogle()
         .then((result)=>{
             let googleUser=result.user 
-            // alert('oky')
             toast.success('successfully log in')
             setTimeout(()=>{
               navigate(loc?.state ? loc.state : '/')
@@ -90,16 +80,14 @@ const LogIn = () => {
   //   // console.log('take one lowercase');
   //  }
    
-   setErroring('')
-  //  setSuccess('')
+  
    signingByEmailAndPassword(email,password)
    .then((result)=>{
    
     let emailUser=result.user 
     console.log(emailUser);
     toast.success('Successfully Log In')
-     setSuccess('Successfully In')
-     console.log(success);
+     
      setTimeout(()=>{
       navigate(loc?.state ? loc.state : '/')
      },1000)
@@ -126,7 +114,7 @@ const LogIn = () => {
   //  console.log(erroring);
   }
 
-  console.log(success);
+
 
 
   function handleSignInBytwitter() {
