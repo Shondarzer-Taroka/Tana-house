@@ -51,7 +51,7 @@ const Banner = () => {
         YOUR DREAM HOME </h1>
     <p className='opacity-90 text-white' data-aos="fade-left" data-aos-delay='1000'> we take pride in being the architects of your dreams,
         transforming your vision of a perfect home
-        into a tangible reality </p>
+        into a tangible reality.</p>
         <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins  animate__animated animate__fadeInLeft animate__delay-1s'>Get Started</button>
 </aside>
 
@@ -106,7 +106,7 @@ const Banner = () => {
 <aside id="text-content" className='md:w-[50%] space-y-7 p-12 md:p-1 '>
     <h1 className="text-[#fcfcff] text-2xl md:text-4xl font-bold font-poppins">THE BEST <br />
         YOUR DREAM HOME </h1>
-    <p className='opacity-90 text-white'> Your dream luxury residence reflects your unique vision, aspirations, and lifestyle preferences, offering a haven of comfort, beauty, and unparalleled luxury tailored to your every desire.</p>
+    <p className='opacity-90 text-white'> Your dream luxury residence reflects your unique vision, aspirations, and lifestyle preferences, offering a haven of comfort.</p>
         <button data-aos="fade-right" data-aos-delay='1000' className='px-5 py-2 bg-[#1C1C62] text-white font-poppins animate__animated animate__fadeInLeft animate__delay-1s'>Get Started</button>
 </aside>
 
@@ -121,7 +121,7 @@ const Banner = () => {
 <aside id="text-content" className='md:w-[50%] space-y-7 p-12 md:p-1'>
     <h1 className="text-[#fcfcff] text-2xl md:text-4xl font-bold font-poppins"> LUXURY <br />
         RESIDENCE YOUR DREAM </h1>
-    <p className='opacity-90 text-white'> Luxury residences provide a refined and exclusive living experience for discerning individuals who appreciate the finer things in life and seek the utmost in comfort, convenience, and prestige.</p>
+    <p className='opacity-90 text-white'> Luxury residences provide exclusive living experience for discerning individuals who appreciate the finer things in life.</p>
         <button className='px-5 py-2 bg-[#1C1C62] text-white font-poppins animate__animated animate__fadeInLeft animate__delay-1s'>Get Started</button>
 </aside>
 

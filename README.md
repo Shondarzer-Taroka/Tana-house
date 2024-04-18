@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 
 
 
-Live Site: [viw website](https://assignment-nine-75ab9.web.app/)
+Live Site: [view website](https://assignment-nine-75ab9.web.app/)
 
 ## Characteristics:
 
