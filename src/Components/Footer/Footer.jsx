@@ -17,7 +17,7 @@ const Footer = () => {
             <div>
               <p> <Link className="underline" to={'/'}>Home</Link></p>
               <p> <Link className="underline" to={'/update'}>Update Profile</Link></p>
-              <p> <Link className="underline" to={'/gallery'}>Premium Properties</Link></p>
+              <p> <Link className="underline" to={'/premium'}>Premium Properties</Link></p>
              
               
               {/* <p> <a href="#">Home</a></p>

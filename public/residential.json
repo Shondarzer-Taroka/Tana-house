@@ -8,7 +8,7 @@
     "status": "sale",
     "area": "3500 sq ft",
     "location": "Lakeview District",
-    "facilities": ["living room", "swimming pool", "kitchen"]
+    "facilities": ["laundry room", "swimming pool", "kitchen"]
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@
     "status": "sale",
     "area": "2000 sq ft",
     "location": "Downtown Core",
-    "facilities": ["living room", "swimming pool", "kitchen"]
+    "facilities": ["living room", "bedroom", "greenhouse"]
   },
   {
     "id": 3,
@@ -32,7 +32,7 @@
     "status": "rent",
     "area": "1800 sq ft",
     "location": "Maplewood Suburbs",
-    "facilities": ["living room", "swimming pool", "kitchen"]
+    "facilities": ["guest room", "swimming pool", "bathroom"]
   },
     {
     "id": 4,
@@ -44,7 +44,7 @@
     "status": "sale",
     "area": "3200 sq ft",
     "location": "Central City",
-    "facilities": ["living room", "rooftop terrace", "gourmet kitchen"]
+    "facilities": ["sunroom", "rooftop terrace", "gourmet kitchen"]
   },
   {
     "id": 5,
@@ -56,7 +56,7 @@
     "status": "sale",
     "area": "1500 sq ft",
     "location": "Rural Village",
-    "facilities": ["living room", "garden", "country kitchen"]
+    "facilities": ["study room", "garden", "country kitchen"]
   }
   ,
   {
@@ -82,7 +82,7 @@
     "status": "sale",
     "area": "2000 sq ft",
     "location": "Highland Park",
-    "facilities": ["living room", "hot tub", "wood kitchen"]
+    "facilities": ["walk-in closet", "hot tub", "wood kitchen"]
   }
   ,
   {
@@ -95,7 +95,7 @@
     "status": "sale",
     "area": "5000 sq ft",
     "location": "Elmwood District",
-    "facilities": ["living room", "tennis court", "chef's kitchen"]
+    "facilities": ["fireplace", "tennis court", "chef's kitchen"]
   }
   ,
   {
@@ -108,7 +108,7 @@
     "status": "rent",
     "area": "2200 sq ft",
     "location": "Arts District",
-    "facilities": ["living room", "balcony", "modern kitchen"]
+    "facilities": ["dining room", "balcony", "modern kitchen"]
   }
   
 ]
