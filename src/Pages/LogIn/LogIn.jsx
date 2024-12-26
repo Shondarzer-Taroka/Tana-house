@@ -13,8 +13,7 @@ const LogIn = () => {
 
   let navigate= useNavigate()
    let loc=useLocation() 
-
-
+  console.log(loc);
    
     function handleRegisterBygoogle() {
         signInBygoogle()
