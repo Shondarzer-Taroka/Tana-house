@@ -1,3 +1,36 @@
+// /** @type {import('tailwindcss').Config} */
+// export default {
+//   content: [
+//     "./index.html",
+//     "./src/**/*.{js,ts,jsx,tsx}",
+//   ],
+//   theme: {
+//     animatedSettings: {
+//       animatedSpeed: 1000,
+//       heartBeatSpeed: 500,
+//       hingeSpeed: 2000,
+//       bounceInSpeed: 750,
+//       bounceOutSpeed: 750,
+//       animationDelaySpeed: 500,
+//       classes: ['bounce', 'heartBeat']
+//   },
+//     extend: {
+//       fontFamily:{
+//         poppins:"'Poppins', sans-serif"
+//       }
+//     },
+//   },
+//   plugins: [
+//     require("daisyui"),
+//     require('tailwindcss-animatecss'),
+//   ],
+// }
+
+
+
+import daisyui from "daisyui";
+import animatecss from "tailwindcss-animatecss";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -13,16 +46,15 @@ export default {
       bounceOutSpeed: 750,
       animationDelaySpeed: 500,
       classes: ['bounce', 'heartBeat']
-  },
+    },
     extend: {
-      fontFamily:{
-        poppins:"'Poppins', sans-serif"
-      }
+      fontFamily: {
+        poppins: "'Poppins', sans-serif",
+      },
     },
   },
   plugins: [
-    require("daisyui"),
-    require('tailwindcss-animatecss'),
+    daisyui,
+    animatecss,
   ],
-}
-
+};
