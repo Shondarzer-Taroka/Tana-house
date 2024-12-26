@@ -39,7 +39,7 @@ export default {
   ],
   theme: {
     animatedSettings: {
-      animatedSpeed: 1000,
+      animatedSpeed: 1000, 
       heartBeatSpeed: 500,
       hingeSpeed: 2000,
       bounceInSpeed: 750,
